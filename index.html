@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pentago</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="field.js"></script>
+
+</head>
+
+<body>
+
+    <div id="play_mode" style="height: 2000px; width: 2000px; background-color: #5D5E54">
+        <canvas id="game_field" height="350px" width="350px"></canvas>
+        <input type="button" value="help?" id="is_user_need_help">
+        <div>
+            <input type="button" value="maybe left?" id="rotate_to_left">
+            <input type="button" value="maybe right?" id="rotate_to_right">
+        </div>
+    </div>
+    <div id="game_over_mode" style='display:none;'>
+        <span id="game_over_text"></span>
+        <input type="button" value="restart?" id="restart_the_game">
+
+    </div>
+</body>
+<script src="class_view.js"></script>
+<script src="main.js"></script>
+
+</html>
